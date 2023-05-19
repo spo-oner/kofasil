@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="https://unpkg.com/imask"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4cedb8be19.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>Kofasil. Заготовка сенажа и силоса. Заготовка сенажа из люцерны и ржи.</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.png">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#survey">Опрос</a></li>
+                    <li><a href="#eco">Экономические показатели</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="file.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <h1>Успех каждого клиента</h1>
+            <h1>Креативный подход</h1>
+            <h1>Индивидуальные решения</h1>
+            <a href="#" class="more">Подробнее</a>
+        </div>
+    </main>
+
+
+    <div class="milk" data-aos="fade-up">
+        <div class="milk-left">
+            <h2>Молоко - продовольственная безопасность и здоровье нации</h2>
+            <p>А для производителей, это ответственность, любовь к своему делу и многофакторный бизнес. Одним из главных
+                факторов которого являются качественные основные корма</p>
+        </div>
+        <div class="milk-right">
+            <img src="img/milk.png">
+        </div>
+    </div>
+
+    <div class="quote" data-aos="fade-up">
+        <div class="quote-text">
+            <p class="h2-margin">У нас есть большой ассортимент биологических и химических консервантов, опыт их
+                внедрения и сервисная
+                поддержка, благодаря которым вы получите:</p>
+            <div class="blockquote">
+                <img class="quotation" src="img/pngwing 1.webp">
+                <h2>Уверенность, победный результат, приспособление под разные условия</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="survey" id="survey" data-aos="fade-up">
+        <h2 class=" h2-margin">Для большего понимания вашей проблемы советуем пройти опрос</h2>
+        <div class="forms">
+            <form id="myForm">
+                <div class="form-table">
+                    <h3>Приходилось ли Вам?</h3>
+                    <p>1. Выбрасывать / списывать корма:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question1" id="question1"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Нет</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question1" id="question1"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question1" id="question1"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Иногда</div>
+                    </label><br>
+                    <p>2. Зачищать испорченные слои:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question2" id="question2"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Нет</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question2" id="question2"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question2" id="question2"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Иногда</div>
+                    </label><br>
+                    <p>3. Уменьшать основные корма в рационе из-за их недостатка:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question3" id="question3"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Нет</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question3" id="question3"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question3" id="question3"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Иногда</div>
+                    </label><br>
+                    <p>4. Корректировать рацион из-за неудовлетворительного качества основных
+                        кормов:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question4" id="question4"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Нет</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question4" id="question4"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question4" id="question4"
+                            required value="Нет">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Иногда</div>
+                    </label><br>
+                </div>
+                <div class="form-table">
+                    <h3>Хотели бы вы?</h3>
+                    <p>1. Иметь в траншее больше кормов, благодаря меньшей их порче:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Все устраивает">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Все устраивает</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Да, хочу улучшить">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да, хочу улучшить</div>
+                    </label><br>
+                    <p>2. Самые высокие показатели потребления сухого вещества коровами:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Все устраивает">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Все устраивает</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Да, хочу улучшить">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да, хочу улучшить</div>
+                    </label><br>
+                    <p>3. Не расстраиваться из-за неприятного запаха в отдельных участках
+                        траншеи:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Все устраивает">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Все устраивает</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Да, хочу улучшить">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да, хочу улучшить</div>
+                    </label><br>
+                    <p>4. Совсем избавиться от проблемы порчи верхнего слоя и
+                        самоогревания:</p>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Все устраивает">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Все устраивает</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question5" id="question5"
+                            required value="Да, хочу улучшить">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Да, хочу улучшить</div>
+                    </label><br>
+                </div>
+                <div class="form-table">
+                    <h3>Что имеет наибольшее значение для качества основных кормов, относительно качества сохранения
+                    </h3>
+                    <label class="mcui-checkbox">
+                        <input type="checkbox" name="question9" id="question9" value="Влажность сенажа">
+                        <div>
+                            <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                            </svg>
+                        </div>
+                        <div>Влажность
+                            сенажа</div>
+                    </label>
+                    <label class="mcui-checkbox">
+                        <input type="checkbox" name="question9" id="question9" value="Трамбовка">
+                        <div>
+                            <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                            </svg>
+                        </div>
+                        <div>Трамбовка</div>
+                    </label>
+                    <label class="mcui-checkbox">
+                        <input type="checkbox" name="question9" id="question9" value="Быстрое и качественное укрытие">
+                        <div>
+                            <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                            </svg>
+                        </div>
+                        <div>Быстрое и качественное укрытие</div>
+                    </label>
+                    <label class="mcui-checkbox">
+                        <input type="checkbox" name="question9" id="question9"
+                            value="Скорость и способы отбора из траншеи">
+                        <div>
+                            <svg class="mcui-check" viewBox="-2 -2 35 35" aria-hidden="true">
+                                <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
+                            </svg>
+                        </div>
+                        <div>Скорость и способы отбора из траншеи</div>
+                    </label>
+                    <p>Впишите свой вариант</p>
+                    <input class="text-field" type="text" name="question10" id="question10" value="">
+                </div>
+                <div class="form-table">
+                    <h3>Как бы вы оценили ваши основные корма</h3>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question11" id="question11"
+                            required value="Очень плохо, нам не повезло с погодными условиями">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Очень плохо, нам не повезло с погодными условиями</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question11" id="question11"
+                            required
+                            value="Отсутствуют условия: нехватка техники, специалистов и / или в неудовлетворительном состоянии траншеи">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Отсутствуют условия: нехватка техники, специалистов и / или в
+                            неудовлетворительном состоянии траншеи</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question11" id="question11"
+                            required value="В целом хорошо, но передряги случаются">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">В целом хорошо, но передряги случаются</div>
+                    </label><br>
+                    <label class="rad-label"><input type="radio" class="rad-input" name="question11" id="question11"
+                            required
+                            value="Отлично, списываем 4-5% на угар, срез абсолютно ровный по качеству, отсутствуют запахи дрожжевого брожения, нет плесени, даже в верхних слоях">
+                        <div class="rad-design"></div>
+                        <div class="rad-text">Отлично, списываем 4-5% на угар, срез абсолютно ровный по качеству,
+                            отсутствуют запахи дрожжевого брожения, нет плесени, даже в верхних слоях</div>
+                    </label><br>
+                    <button class="survey-btn" data-survey-btn type="submit">Прислать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="about" id="about" data-aos="fade-up">
+        <img src="img/field.webp">
+        <div class="about-text">
+            <p>Компания ADDCON (Германия) более
+                70 лет специализируется на качестве сохранения кормового сырья.
+                Ее ценность - Зеленая Химия.<br>
+                В ассортименте более 20 разновидностей биологических и химических консервантов</p>
+        </div>
+    </div>
+
+    <div class="benefits" data-aos="fade-up">
+        <h2 class="h2-margin">Используя опыт компании ADCCON, сервис и большой выбор продуктов, мы достигаем идеального
+            качества
+            сохранения, а благодаря этому вы получаете:</h2>
+        <div class="benefits-table">
+            <div class="table-item">
+                <i class="fa-solid fa-1" style="color: #bb8e17;"></i>
+                <p>Идеальный рацион составленный из идеального сырья</p>
+            </div>
+            <div class="table-item">
+                <i class="fa-solid fa-2" style="color: #bb8e17;"></i>
+                <p>Наименьший уровень угара и отходов</p>
+            </div>
+            <div class="table-item">
+                <i class="fa-solid fa-3" style="color: #bb8e17;"></i>
+                <p>Самое высокое потребление сухого вещества, НДК и структурной клетчатки</p>
+            </div>
+            <div class="table-item">
+                <i class="fa-solid fa-4" style="color: #bb8e17;"></i>
+                <p>Наименьшее соотношение концентратов и основных кормов</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stat" data-aos="fade-up">
+        <div class="stat-item">
+            <h2>Вместе с нашими клиентами мы получаем значительные результаты, к которым можете присоединиться и вы</h2>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-signal fa-2xl" style="color: #37823e"></i>
+            <p>Достижение значительных результатов молочной продуктивности 40 - 44 л (в базисных показателях)</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-arrow-right-arrow-left fa-2xl" style="color: #37823e"></i>
+            <p>Разница между завезенной зеленой массой и использованным силосом/сенажем 4 - 6%</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-chart-pie fa-2xl" style="color: #37823e"></i>
+            <p>Увеличение потребления сухого вещества на 1 - 1,5 кг</p>
+        </div>
+    </div>
+
+    <div class="firstcall-me" data-aos="fade-up">
+        <div class="contact-form2">
+            <h2>Оставьте ваши контакты, и укажите что именно вас интересует</h2>
+            <form id="ContactForm2">
+                <div class="form-item">
+                    <label for="contact-name2">Ваше имя</label>
+                    <input name="username" id="contact-name2" type="text" required>
+                </div>
+                <div class="form-item">
+                    <label for="contact-phone2">Ваш номер телефона</label>
+                    <input name="userphone" id="contact-phone2" type="tel" required>
+                </div>
+                <div class="form-item">
+                    <label for="contact-target2">Выберите вариант</label>
+                    <select name="selectvalue" id="contact-target2">
+                </div>
+                <option value="Меня интересует аудит">Меня интересует аудит</option>
+                <option value="Мне интересно что я могу получить в случае сотрудничества">Мне интересно что я могу
+                    получить
+                    в случае сотрудничества</option>
+                <option value="Хочу получить коммерческое предложение">Хочу получить коммерческое предложение</option>
+                </select>
+                <button class="survey-btn" data-contact2-btn type="submit">Прислать</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div class="about" id="eco" data-aos="fade-up">
+        <img src="img/tractor.png">
+        <div class="about-text">
+            <h2>Экономические показатели при использовании консервантов</h2>
+            <p>При пересчете на стоимость рациона, стоимость консервантов составит от 1,5 до 4 грн.
+                Стоимость зависит от условий на хозяйстве, возможности их изменения, использования биологических и
+                химических консервантов для уменьшения рисков</p>
+        </div>
+    </div>
+
+    <div class="conservant h2-margin" data-aos="fade-up">
+            <h2>Благодаря использованию консервантов вы получите силос и сенаж идеального качества, который будет:</h2>
+        <div class="conservant-table">
+            <div class="conservant-item">
+                <i class="fa-solid fa-cow fa-2xl" style="color: #bb8e17;"></i>
+                <p>Более привлекательный для коров, увеличится потребление сухого вещества, НДК и структурной клетчатки
+                </p>
+            </div>
+            <div class="conservant-item">
+                <i class="fa-solid fa-ranking-star fa-2xl" style="color: #bb8e17;"></i>
+                <p>За счет большего потребления, может быть уменьшено использование концентратов на 1 - 1,5 кг,
+                    увеличена молочная продуктивность на 1,5 - 2,5 л (в базисных показателях)
+                </p>
+            </div>
+            <div class="conservant-item">
+                <i class="fa-solid fa-wheat-awn fa-2xl" style="color: #bb8e17;"></i>
+                <p>Уменьшение угара и испорченных слоев, списаний некачественного корма, в среднем на 6 - 10%, что
+                    позволит уменьшить земельный банк под кормовыми культурами
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="solutions" data-aos="fade-up">
+        <h2 class="h2-margin">Решения которые мы предлагаем</h2>
+        <div class="solutions-table">
+            <div class="solutions-item">
+                <img src="img/woman.webp">
+                <div class="sol-links">
+                    <a href="#">Злаковые и бобовые травы</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/hay.webp">
+                <div class="sol-links">
+                    <a href="#">Пивная дробина, барда, жом</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/corn.webp">
+                <div class="sol-links">
+                    <a href="#">Силос из кукурузы и сорго</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/corn2.webp">
+                <div class="sol-links">
+                    <a href="#">Решения для биогазовых станций</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq" id="faq" data-aos="fade-up">
+        <h2>Распространенные вопросы</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">Какое количество бактерий надо добавлять на грамм фуража?</h3>
+            <div class="faq-answer">
+                <p>Есть исследования, говорящие о том, что внесение 100 тыс/грамм приводит к уменьшению потерь. Но
+                    вопрос что именно вносим. Какие бактерии являются основными (для образования молочной или уксусной
+                    кислоты)? В каких условиях они жизнеспособны? Каждый производитель решает эти вопросы по своему.
+                    Кто-то добавляет вспомогательные, менее эффективные бактерии, а кто-то ищет основные, которые
+                    действенны в более широком диапазоне условий. От этого зависят рекомендации производителя. 100...
+                    300 ... 600 или более тыс/грамм. проверяйте и следуйте рекомендациям производителя</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Как разбавлять консервант?</h3>
+            <div class="faq-answer">
+                <p>Растворение биологического консерванта надо делать в чистой воде, температура которой находится в
+                    пределах 20
+                    0С. сначала сделайте рабочий раствор в 1 – 2 литрах, убедитесь что не осталось комочков. Далее
+                    растворите в необходимом количестве воды для получения готового раствора. Одну пачку наших
+                    консервантов (100 грамм) можно растворять на 50 – 200 литров воды. В зависимости от концентрации
+                    разведения используйте готовый раствор от 0,5 до 2,0 литров на 1 тонну зеленой массы, в пересчете, 1
+                    грамм консерванта на 1 тонну зеленой массы</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">В каких случаях можно не использовать биологические консерванты?</h3>
+            <div class="faq-answer">
+                <p>Для злаковых и бобовых трав при идеальных условиях (см. буклет о наших соответствующих решениях),
+                    внесение консерванта иногда является страховкой. Из-за того, что заблаговременно мы не знаем состав
+                    и жизнеспособность эпифитной микрофлоры. Погодные условия могут не способствовать ее накоплению. В
+                    исследованиях мы видим от 10 до 1 млн эпифитных бактерий. Какой случай будет у вас в каждом сезоне,
+                    предсказать невозможно.</p>
+                <p>Для силоса из кукурузы и сорго, других культур которые более длительное время находятся в поле, эта
+                    проблема отсутствует. Но существует другая. Для их защиты от дрожжей, плесени, вторичного
+                    согревания, необходима уксусная кислота. Уксусная кислота производится гетеро-ферментативными
+                    бактериями, которые естественным образом менее жизнеспособны и медленнее делятся. Поэтому
+                    консерванты для таких культур вносятся, чтобы их усилить. Если вы технологически превосходны, а
+                    скорость и качество отбора соответствуют требованиям (см. буклет о наших решениях для кукурузы и
+                    сорго), вы можете работать без консерванта. В таких условиях дрожжи не успевают увеличиться до
+                    критического уровня</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Есть ли альтернатива химическим консервантам?</h3>
+            <div class="faq-answer">
+                <p>Химические консерванты используются в сложных погодных и технологических условиях. У них есть 3
+                    альтернативы:</p>
+                <p>1.Вы можете заложить влажную массу и использовать ее быстро (2 – 3 месяца). Чтобы не успела полностью
+                    испортиться. Такой вариант не является на 100% надежным. Даже небольшая порча приведет к снижению
+                    потребления и проблемам с пищеварительной системой.</p>
+                <p>2. Вы можете привялить массу сильнее, чтобы клостридии были менее активны. Но увеличение времени
+                    привяливания ведет к еще большему загрязнению и потерям питательности. Вы уменьшите активность
+                    клостридий, но будет больше спор, которые не проявят себя в сенаже, но будут проблемой для коров.
+                </p>
+                <p>3. отказаться от использования сенажа, и перейти на силосный тип кормления. Наиболее безопасное
+                    решение, но предварительно, для его оценки мы рекомендуем хотя бы один год заготовить качественный
+                    сенаж. Вы обнаружите, что затраты легко окупаются из-за меньшего использования концентратов</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Каковы критерии оценки работы консерванта?</h3>
+            <div class="faq-answer">
+                <p>Использование консервантов должно принести: уменьшение списаний, идеальный срез без испорченных слоев
+                    и увеличение потребления сухого вещества коровами.</p>
+                <p>По анализам также можно сделать такую оценку, при условии если вы делаете исследование показателей
+                    ферментации химическим способом (не NIR).</p>
+                <p>Для злаковых и бобовых трав следующие показатели (но чем меньше, тем лучше): аммиак (%NH3 от N) до
+                    10%. Масляная кислота до 0,3%, уксусная кислота до 3%. Уровень pH на безопасном уровне. Безопасный
+                    уровень должен быть меньше чем целевой, и разный для разной влажности. Целевой можно рассчитать по
+                    формуле: 3,71 + (0,0257 х (% сухого вещества)).</p>
+                <p>Для кукурузы и сорго: силос не должен быть перекисшим, (рН 3,8 - 4,0), этанол 1 – 1,5% и менее,
+                    уксусная кислота 2 – 3%, пропиленгликоль (1,2-propanediol) – 30 – 50% от количества уксусной
+                    кислоты. Допускается незначительное превышение уксусной кислоты в случае наличия высоких показателей
+                    по 1,2-propanediol</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Что делать, если силос греется?</h3>
+            <div class="faq-answer">
+                <p>Если силос греется, что свидетельствует о высокой активности дрожжей. Лучше всего и дешевле
+                    профилактировать эту проблему во время заготовки, внесением более надежных консервантов. Есть
+                    практика обработки пропионовой кислотой среза (желательно использовать специализированные, более
+                    безопасные продукты), или внесение консервантов непосредственно в TMR</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Как уменьшить отходы силоса / сенажа?</h3>
+            <div class="faq-answer">
+                <p>1.надо улучшить все пункты технологии. Масса должна собираться качественно, быстро. Трамбовка не
+                    должна быть слишком долгой, но качественной. Необходимо как можно быстрее качественно укрыть
+                    траншею. Если не успеваете за 1 – 2 дня, надо делать промежуточное укрытие (пленку можно
+                    использовать старую, прижать по периметру, главное - временно уменьшить доступ кислорода)</p>
+                <p>2.после открытия контролируйте качество среза, скорость отбора и по максимуму перекройте доступ
+                    воздуха под пленку со стороны открытого края.</p>
+                <p>3. Силос и сухой сенаж в верхних слоях всегда имеет меньшую плотность, и как следствие, воздух
+                    проникает глубже. Поможет специализированный консервант, который активен против дрожжей и плесени.
+                </p>
+                <p>4. влажный силос из злаковых и бобовых трав может быть полностью, или частично испорчен клостридиями.
+                    Испорченные слои ухудшат потребление и могут быть опасны для животных. Когда есть риски дождя, или
+                    другие условия которые не позволят качественно и равномерно провялить зеленую массу, лучше
+                    использовать химические консерванты, которые активны против клостридии. Особенно рискованны ранние
+                    весенние и поздние осенние откосы. Желательно иметь две траншеи, в одну заготавливать зеленую массу
+                    с биологическим консервантом, во время благоприятных погодных условий, а в другую с химическим,
+                    когда условия неблагоприятные, или есть риски что они таковыми станут</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Как увеличить потребление сухого вещества коровами?</h3>
+            <div class="faq-answer">
+                <p>Наибольшее потребление наблюдается у коров, в рационе которых используют основные корма наилучшего
+                    качества. С высокой питательностью, перевариваемостью клетчатки и, что наиболее важно, качеством
+                    консервации и ферментации. При неудовлетворительном качестве сохранения потребление снижалось на
+                    20%, а при ухудшении питательности и переваримости, но при высоком качестве сохранения, только на
+                    12% (Poole, 1992)</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Каковы ваши преимущества?</h3>
+            <div class="faq-answer">
+                <p>У нас три главных преимущества:</p>
+                <p>1. Широкий ассортимент высокоэффективных консервантов.</p>
+                <p>2. многолетний опыт</p>
+                <p>3. гибкость, позволяющая получать идеальный результат в различных условиях, и за наименьшие средства.
+                </p>
+                <p>У нас не только разные консерванты, но и разный подход к ценовой политике, в зависимости от уровня
+                    сервиса, в котором вы нуждаетесь</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Какие гарантии что расходы окупятся?</h3>
+            <div class="faq-answer">
+                <p>В некоторых случаях, когда вы уже достигли определенных технологических результатов, и готовы
+                    следовать нашим рекомендациям, мы готовы нести финансовую ответственность за предложенные решения
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="solutions" data-aos="fade-up">
+        <h2 class="h2-margin">Полезная информация</h2>
+        <div class="solutions-table">
+            <div class="solutions-item">
+                <img src="img/cow.webp">
+                <div class="sol-links">
+                    <a href="#">Злаковые и бобовые травы</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/silos.webp">
+                <div class="sol-links">
+                    <a href="#">Пивная дробина, барда, жом</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/plants.webp">
+                <div class="sol-links">
+                    <a href="#">Силос из кукурузы и сорго</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+            <div class="solutions-item">
+                <img src="img/tech.webp">
+                <div class="sol-links">
+                    <a href="#">Решения для биогазовых станций</a>
+                    <a href="#"><i class="fa-solid fa-circle-arrow-right fa-2xl" style="color: #bb8e17;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="call-me" id="contact" data-aos="fade-up">
+        <img src="img/cow2.webp">
+        <div class="contact-form">
+            <h2>Оставьте ваши контакты, и укажите что именно вас интересует</h2>
+            <form id="ContactForm">
+                <label for="contact-name">Ваше имя</label>
+                <input name="username" id="contact-name" type="text" required>
+                <label for="contact-phone">Ваш номер телефона</label>
+                <input name="userphone" id="contact-phone" type="tel" required>
+                <label for="contact-target">Выберите вариант</label>
+                <select name="selectvalue" id="contact-target">
+                    <option value="Меня интересует аудит">Меня интересует аудит</option>
+                    <option value="Мне интересно что я могу получить в случае сотрудничества">Мне интересно что я могу
+                        получить в случае сотрудничества</option>
+                    <option value="Хочу получить коммерческое предложение">Хочу получить коммерческое предложение
+                    </option>
+                </select>
+                <button class="survey-btn" data-contact-btn type="submit">Прислать</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#"><img src="img/addcon.png" alt="Addcon Logo"></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #bb8e17;"></i></a></li>
+            <li><a href="tel:+1234567890">+1234567890</a></li>
+            <li><a href="mailto:test@mail.ru">test@mail.ru</a></li>
+        </ul>
+    </footer>
+
+
+
+    <script>
+        AOS.init();
+      </script>
+    <script src="js/phoneinput.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
